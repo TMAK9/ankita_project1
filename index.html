@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<style>
+    /* Basic letter styling */
+span {
+  font-size: 8em;
+  font-family: impact;
+  display: block;
+}
+
+/* Enable a 3d space */
+.logo {
+  perspective: 1000px;
+  perspective-origin: 50% 0;
+  background:black;
+ 
+}
+
+/* Transform the letter */                                                                                                                                              
+.logo span {
+  transform-origin: 0 0;
+  transform: scaleX(80) rotateY(89.5deg);
+}
+
+.backImg{
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+}
+.logoName{
+  
+  position: absolute;
+  top:0;
+  left: 1%;
+  opacity : 0.5;
+  background: black;
+  height: 15%;
+  width:13%;
+}
+.header{
+  height:15%;
+  background: black;
+  
+}
+
+.select-arrow 
+{
+position: absolute;
+top:0;
+}
+
+</style>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="logo">
+          <img class="backImg" src="./netflix-800x450.jpg"/>
+          <div class="header">
+             <img class="logoName" src="./download.png"/>
+             <div class="select-arrow"><select data-uia="language-picker-header" class="ui-select medium" id="lang-switcher-header-select" tabindex="0" placeholder="lang-switcher"><option selected="" lang="en" value="/in/" data-language="en" data-country="IN">English</option><option lang="hi" value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option></select></div>            </div>
+        </div>
+
+    </body>
+    <footer></footer>
+            
+</html>
